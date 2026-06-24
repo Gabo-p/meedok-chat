@@ -1,0 +1,34 @@
+# Technical State
+- Status: complete
+- Depth: full
+
+## Questions
+- [x] T1 [CORE]
+- [x] T2 [CORE]
+- [x] T3 [CORE]
+- [x] T4
+- [x] T5 [CORE]
+- [x] T6
+- [x] T7 [CORE]
+- [x] T8 [CORE]
+- [x] T9
+- [x] T10 [CORE]
+- [x] T11
+- [x] T12
+- [x] T13 [CORE]
+- [x] T14 [CORE]
+- [x] T15
+- [x] T16
+- [x] T17 [CORE]
+- [x] T18
+- [x] T19
+- [x] T20 [CORE]
+- [x] T21
+- [x] T22 [CORE]
+- [x] T23
+- [x] T24
+- [x] T25
+- [x] T26
+- [x] T27
+- [x] T28
+- [x] T29
