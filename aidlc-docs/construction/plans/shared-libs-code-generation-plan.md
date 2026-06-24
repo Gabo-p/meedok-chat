@@ -32,32 +32,41 @@
 
 ## Generation Steps
 
-### Step 1: NX Workspace Bootstrap
-- [ ] 1.1 Create `package.json` (NX workspace root, pnpm, workspaces config, postinstall: prisma generate)
-- [ ] 1.2 Create `nx.json` (NX config, default targets, task runner)
-- [ ] 1.3 Create `tsconfig.base.json` (strict: true, `@meedok/*` path aliases)
-- [ ] 1.4 Create `.eslintrc.json` (root ESLint config with `@nx/enforce-module-boundaries`)
-- [ ] 1.5 Create `pnpm-workspace.yaml` (workspace packages: apps/*, libs/*)
-- [ ] 1.6 Create `.prettierrc` and `.gitignore`
-- [ ] *Story covered*: S-SL-04
+## Developer Assignment
 
-### Step 2: `libs/domain` — Domain Entities
-- [ ] 2.1 Create `libs/domain/project.json` (NX project config, tags: scope:shared,type:util)
-- [ ] 2.2 Create `libs/domain/tsconfig.json` (extends root, strict)
-- [ ] 2.3 Create `libs/domain/src/entities/tenant.entity.ts`
-- [ ] 2.4 Create `libs/domain/src/entities/doctor.entity.ts` (DoctorRole type)
-- [ ] 2.5 Create `libs/domain/src/entities/patient.entity.ts`
-- [ ] 2.6 Create `libs/domain/src/entities/diagnosis.entity.ts`
-- [ ] 2.7 Create `libs/domain/src/entities/prescription.entity.ts` (PrescriptionStatus type)
-- [ ] 2.8 Create `libs/domain/src/entities/chat-session.entity.ts` (SessionStatus type)
-- [ ] 2.9 Create `libs/domain/src/entities/chat-message.entity.ts` (MessageRole, DoctorDecision types)
-- [ ] 2.10 Create `libs/domain/src/value-objects/patient-context.vo.ts` (PatientContext, DiagnosisSummary)
-- [ ] 2.11 Create `libs/domain/src/value-objects/jwt-payload.vo.ts` (JwtPayload)
-- [ ] 2.12 Create `libs/domain/src/value-objects/pagination.vo.ts` (PaginationCursor, PaginatedResult)
-- [ ] 2.13 Create `libs/domain/src/index.ts` (barrel export — all entities and value objects)
-- [ ] *Story covered*: S-SL-01 (domain layer)
+| Developer | Assigned Steps | Scope |
+|-----------|---------------|-------|
+| **Gabriel** | Steps 1, 2, 4, 6 | NX workspace bootstrap, libs/domain entities, libs/ai-client source, PBT tests |
+| **Maycoll** | Steps 3, 5, 7, 8 | libs/shared-types DTOs/enums, unit tests, Prisma schema, documentation |
 
-### Step 3: `libs/shared-types` — DTOs, Enums, Constants
+---
+
+### Step 1: NX Workspace Bootstrap — 👤 Gabriel
+- [x] 1.1 Create `package.json` (NX workspace root, pnpm, workspaces config, postinstall: prisma generate)
+- [x] 1.2 Create `nx.json` (NX config, default targets, task runner)
+- [x] 1.3 Create `tsconfig.base.json` (strict: true, `@meedok/*` path aliases)
+- [x] 1.4 Create `.eslintrc.json` (root ESLint config with `@nx/enforce-module-boundaries`)
+- [x] 1.5 Create `pnpm-workspace.yaml` (workspace packages: apps/*, libs/*)
+- [x] 1.6 Create `.prettierrc` and `.gitignore`
+- [x] *Story covered*: S-SL-04
+
+### Step 2: `libs/domain` — Domain Entities — 👤 Gabriel
+- [x] 2.1 Create `libs/domain/project.json` (NX project config, tags: scope:shared,type:util)
+- [x] 2.2 Create `libs/domain/tsconfig.json` (extends root, strict)
+- [x] 2.3 Create `libs/domain/src/entities/tenant.entity.ts`
+- [x] 2.4 Create `libs/domain/src/entities/doctor.entity.ts` (DoctorRole type)
+- [x] 2.5 Create `libs/domain/src/entities/patient.entity.ts`
+- [x] 2.6 Create `libs/domain/src/entities/diagnosis.entity.ts`
+- [x] 2.7 Create `libs/domain/src/entities/prescription.entity.ts` (PrescriptionStatus type)
+- [x] 2.8 Create `libs/domain/src/entities/chat-session.entity.ts` (SessionStatus type)
+- [x] 2.9 Create `libs/domain/src/entities/chat-message.entity.ts` (MessageRole, DoctorDecision types)
+- [x] 2.10 Create `libs/domain/src/value-objects/patient-context.vo.ts` (PatientContext, DiagnosisSummary)
+- [x] 2.11 Create `libs/domain/src/value-objects/jwt-payload.vo.ts` (JwtPayload)
+- [x] 2.12 Create `libs/domain/src/value-objects/pagination.vo.ts` (PaginationCursor, PaginatedResult)
+- [x] 2.13 Create `libs/domain/src/index.ts` (barrel export — all entities and value objects)
+- [x] *Story covered*: S-SL-01 (domain layer)
+
+### Step 3: `libs/shared-types` — DTOs, Enums, Constants — 👤 Maycoll
 - [ ] 3.1 Create `libs/shared-types/project.json` (NX project config, tags: scope:shared,type:util)
 - [ ] 3.2 Create `libs/shared-types/tsconfig.json`
 - [ ] 3.3 Create `libs/shared-types/src/enums/roles.enum.ts` (DoctorRole)
@@ -80,7 +89,7 @@
 - [ ] 3.20 Create `libs/shared-types/src/index.ts` (barrel export — all DTOs, enums, types, constants)
 - [ ] *Story covered*: S-SL-01 (shared types layer)
 
-### Step 4: `libs/ai-client` — AWS Bedrock Wrapper
+### Step 4: `libs/ai-client` — AWS Bedrock Wrapper — 👤 Gabriel
 - [ ] 4.1 Create `libs/ai-client/project.json` (NX project config, tags: scope:shared,type:util)
 - [ ] 4.2 Create `libs/ai-client/tsconfig.json`
 - [ ] 4.3 Create `libs/ai-client/src/errors.ts` (AiClientError class, AiClientErrorCode type)
@@ -92,7 +101,7 @@
 - [ ] 4.9 Create `libs/ai-client/src/index.ts` (barrel export)
 - [ ] *Story covered*: S-SL-02
 
-### Step 5: `libs/ai-client` Unit Tests
+### Step 5: `libs/ai-client` Unit Tests — 👤 Maycoll
 - [ ] 5.1 Create `libs/ai-client/jest.config.ts`
 - [ ] 5.2 Create `libs/ai-client/src/__tests__/circuit-breaker.test.ts` (state transitions, failure counting, window expiry)
 - [ ] 5.3 Create `libs/ai-client/src/__tests__/stream-timeout.test.ts` (timer fire, first-chunk cancel, clearAll)
@@ -100,17 +109,17 @@
 - [ ] 5.5 Create `libs/ai-client/src/__tests__/ai-client.test.ts` (streamInvoke success, retry, circuit open, timeout — Bedrock SDK mocked)
 - [ ] *Story covered*: S-SL-02 (test coverage)
 
-### Step 6: `libs/ai-client` Property-Based Tests
+### Step 6: `libs/ai-client` Property-Based Tests — 👤 Gabriel
 - [ ] 6.1 Create `libs/ai-client/src/__tests__/pbt/ai-client.pbt.test.ts` (error classification always returns boolean retryable; chunk parsing never throws)
 - [ ] 6.2 Create `libs/ai-client/src/__tests__/pbt/cursor.pbt.test.ts` (encode/decode round-trip; decoded cursor has correct types)
 - [ ] *Story covered*: S-SL-02 (PBT), NFR-SL-T01/T02/T03
 
-### Step 7: Prisma Schema
+### Step 7: Prisma Schema — 👤 Maycoll
 - [ ] 7.1 Create `prisma/schema.prisma` (full schema — all 7 models with soft delete, tenant isolation, UUID PKs)
 - [ ] 7.2 Create `prisma/.env.example` (DATABASE_URL placeholder)
 - [ ] *Story covered*: S-SL-03
 
-### Step 8: Documentation Summary
+### Step 8: Documentation Summary — 👤 Maycoll
 - [ ] 8.1 Create `aidlc-docs/construction/shared-libs/code/code-summary.md` (list of all generated files with descriptions)
 
 ---
