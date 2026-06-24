@@ -67,60 +67,60 @@
 - [x] *Story covered*: S-SL-01 (domain layer)
 
 ### Step 3: `libs/shared-types` — DTOs, Enums, Constants — 👤 Maycoll
-- [ ] 3.1 Create `libs/shared-types/project.json` (NX project config, tags: scope:shared,type:util)
-- [ ] 3.2 Create `libs/shared-types/tsconfig.json`
-- [ ] 3.3 Create `libs/shared-types/src/enums/roles.enum.ts` (DoctorRole)
-- [ ] 3.4 Create `libs/shared-types/src/enums/session-status.enum.ts`
-- [ ] 3.5 Create `libs/shared-types/src/enums/message-role.enum.ts`
-- [ ] 3.6 Create `libs/shared-types/src/enums/doctor-decision.enum.ts`
-- [ ] 3.7 Create `libs/shared-types/src/enums/prescription-status.enum.ts`
-- [ ] 3.8 Create `libs/shared-types/src/enums/error-codes.enum.ts` (AiClientErrorCode)
-- [ ] 3.9 Create `libs/shared-types/src/dtos/auth.dto.ts` (LoginDto, TokenPairDto, RefreshTokenDto, LogoutDto)
-- [ ] 3.10 Create `libs/shared-types/src/dtos/patient.dto.ts` (PatientDto, CreatePatientDto, UpdatePatientDto)
-- [ ] 3.11 Create `libs/shared-types/src/dtos/diagnosis.dto.ts` (DiagnosisDto, CreateDiagnosisDto)
-- [ ] 3.12 Create `libs/shared-types/src/dtos/session.dto.ts` (SessionDto, SessionWithMessagesDto, CreateSessionDto)
-- [ ] 3.13 Create `libs/shared-types/src/dtos/message.dto.ts` (ChatMessageDto)
-- [ ] 3.14 Create `libs/shared-types/src/dtos/tenant.dto.ts` (TenantDto)
-- [ ] 3.15 Create `libs/shared-types/src/api/response.types.ts` (ApiResponse, ResponseMeta, PaginatedResult)
-- [ ] 3.16 Create `libs/shared-types/src/api/problem-details.types.ts` (ProblemDetails, ValidationError)
-- [ ] 3.17 Create `libs/shared-types/src/api/pagination.types.ts` (PaginationCursor)
-- [ ] 3.18 Create `libs/shared-types/src/ws/events.types.ts` (all WS event types — client→server and server→client)
-- [ ] 3.19 Create `libs/shared-types/src/constants/disclaimer.constant.ts` (AI_DISCLAIMER)
-- [ ] 3.20 Create `libs/shared-types/src/index.ts` (barrel export — all DTOs, enums, types, constants)
-- [ ] *Story covered*: S-SL-01 (shared types layer)
+- [x] 3.1 Create `libs/shared-types/project.json` (NX project config, tags: scope:shared,type:util)
+- [x] 3.2 Create `libs/shared-types/tsconfig.json`
+- [x] 3.3 Create `libs/shared-types/src/enums/roles.enum.ts` (DoctorRole)
+- [x] 3.4 Create `libs/shared-types/src/enums/session-status.enum.ts`
+- [x] 3.5 Create `libs/shared-types/src/enums/message-role.enum.ts`
+- [x] 3.6 Create `libs/shared-types/src/enums/doctor-decision.enum.ts`
+- [x] 3.7 Create `libs/shared-types/src/enums/prescription-status.enum.ts`
+- [x] 3.8 Create `libs/shared-types/src/enums/error-codes.enum.ts` (AiClientErrorCode)
+- [x] 3.9 Create `libs/shared-types/src/dtos/auth.dto.ts` (LoginDto, TokenPairDto, RefreshTokenDto, LogoutDto)
+- [x] 3.10 Create `libs/shared-types/src/dtos/patient.dto.ts` (PatientDto, CreatePatientDto, UpdatePatientDto)
+- [x] 3.11 Create `libs/shared-types/src/dtos/diagnosis.dto.ts` (DiagnosisDto, CreateDiagnosisDto)
+- [x] 3.12 Create `libs/shared-types/src/dtos/session.dto.ts` (SessionDto, SessionWithMessagesDto, CreateSessionDto)
+- [x] 3.13 Create `libs/shared-types/src/dtos/message.dto.ts` (ChatMessageDto)
+- [x] 3.14 Create `libs/shared-types/src/dtos/tenant.dto.ts` (TenantDto)
+- [x] 3.15 Create `libs/shared-types/src/api/response.types.ts` (ApiResponse, ResponseMeta, PaginatedResult)
+- [x] 3.16 Create `libs/shared-types/src/api/problem-details.types.ts` (ProblemDetails, ValidationError)
+- [x] 3.17 Create `libs/shared-types/src/api/pagination.types.ts` (PaginationCursor)
+- [x] 3.18 Create `libs/shared-types/src/ws/events.types.ts` (all WS event types — client→server and server→client)
+- [x] 3.19 Create `libs/shared-types/src/constants/disclaimer.constant.ts` (AI_DISCLAIMER)
+- [x] 3.20 Create `libs/shared-types/src/index.ts` (barrel export — all DTOs, enums, types, constants)
+- [x] *Story covered*: S-SL-01 (shared types layer)
 
 ### Step 4: `libs/ai-client` — AWS Bedrock Wrapper — 👤 Gabriel
-- [ ] 4.1 Create `libs/ai-client/project.json` (NX project config, tags: scope:shared,type:util)
-- [ ] 4.2 Create `libs/ai-client/tsconfig.json`
-- [ ] 4.3 Create `libs/ai-client/src/errors.ts` (AiClientError class, AiClientErrorCode type)
-- [ ] 4.4 Create `libs/ai-client/src/types.ts` (ModelConfig, AiClientConfig interfaces)
-- [ ] 4.5 Create `libs/ai-client/src/safe-logger.ts` (SafeLogger interface, createSafeLogger(), SENSITIVE_KEYS)
-- [ ] 4.6 Create `libs/ai-client/src/circuit-breaker.ts` (CircuitBreaker class, bedrockCircuitBreaker singleton)
-- [ ] 4.7 Create `libs/ai-client/src/stream-timeout.ts` (StreamTimeoutHandles, createStreamTimeouts())
-- [ ] 4.8 Create `libs/ai-client/src/ai-client.ts` (AiClient class — streamInvoke(), invoke())
-- [ ] 4.9 Create `libs/ai-client/src/index.ts` (barrel export)
-- [ ] *Story covered*: S-SL-02
+- [x] 4.1 Create `libs/ai-client/project.json` (NX project config, tags: scope:shared,type:util)
+- [x] 4.2 Create `libs/ai-client/tsconfig.json`
+- [x] 4.3 Create `libs/ai-client/src/errors.ts` (AiClientError class, AiClientErrorCode type)
+- [x] 4.4 Create `libs/ai-client/src/types.ts` (ModelConfig, AiClientConfig interfaces)
+- [x] 4.5 Create `libs/ai-client/src/safe-logger.ts` (SafeLogger interface, createSafeLogger(), SENSITIVE_KEYS)
+- [x] 4.6 Create `libs/ai-client/src/circuit-breaker.ts` (CircuitBreaker class, bedrockCircuitBreaker singleton)
+- [x] 4.7 Create `libs/ai-client/src/stream-timeout.ts` (StreamTimeoutHandles, createStreamTimeouts())
+- [x] 4.8 Create `libs/ai-client/src/ai-client.ts` (AiClient class — streamInvoke(), invoke())
+- [x] 4.9 Create `libs/ai-client/src/index.ts` (barrel export)
+- [x] *Story covered*: S-SL-02
 
 ### Step 5: `libs/ai-client` Unit Tests — 👤 Maycoll
-- [ ] 5.1 Create `libs/ai-client/jest.config.ts`
-- [ ] 5.2 Create `libs/ai-client/src/__tests__/circuit-breaker.test.ts` (state transitions, failure counting, window expiry)
-- [ ] 5.3 Create `libs/ai-client/src/__tests__/stream-timeout.test.ts` (timer fire, first-chunk cancel, clearAll)
-- [ ] 5.4 Create `libs/ai-client/src/__tests__/safe-logger.test.ts` (key redaction, deep redaction)
-- [ ] 5.5 Create `libs/ai-client/src/__tests__/ai-client.test.ts` (streamInvoke success, retry, circuit open, timeout — Bedrock SDK mocked)
-- [ ] *Story covered*: S-SL-02 (test coverage)
+- [x] 5.1 Create `libs/ai-client/jest.config.ts`
+- [x] 5.2 Create `libs/ai-client/src/__tests__/circuit-breaker.test.ts` (state transitions, failure counting, window expiry)
+- [x] 5.3 Create `libs/ai-client/src/__tests__/stream-timeout.test.ts` (timer fire, first-chunk cancel, clearAll)
+- [x] 5.4 Create `libs/ai-client/src/__tests__/safe-logger.test.ts` (key redaction, deep redaction)
+- [x] 5.5 Create `libs/ai-client/src/__tests__/ai-client.test.ts` (streamInvoke success, retry, circuit open, timeout — Bedrock SDK mocked)
+- [x] *Story covered*: S-SL-02 (test coverage)
 
 ### Step 6: `libs/ai-client` Property-Based Tests — 👤 Gabriel
-- [ ] 6.1 Create `libs/ai-client/src/__tests__/pbt/ai-client.pbt.test.ts` (error classification always returns boolean retryable; chunk parsing never throws)
-- [ ] 6.2 Create `libs/ai-client/src/__tests__/pbt/cursor.pbt.test.ts` (encode/decode round-trip; decoded cursor has correct types)
-- [ ] *Story covered*: S-SL-02 (PBT), NFR-SL-T01/T02/T03
+- [x] 6.1 Create `libs/ai-client/src/__tests__/pbt/ai-client.pbt.test.ts` (error classification always returns boolean retryable; chunk parsing never throws)
+- [x] 6.2 Create `libs/ai-client/src/__tests__/pbt/cursor.pbt.test.ts` (encode/decode round-trip; decoded cursor has correct types)
+- [x] *Story covered*: S-SL-02 (PBT), NFR-SL-T01/T02/T03
 
 ### Step 7: Prisma Schema — 👤 Maycoll
-- [ ] 7.1 Create `prisma/schema.prisma` (full schema — all 7 models with soft delete, tenant isolation, UUID PKs)
-- [ ] 7.2 Create `prisma/.env.example` (DATABASE_URL placeholder)
-- [ ] *Story covered*: S-SL-03
+- [x] 7.1 Create `prisma/schema.prisma` (full schema — all 7 models with soft delete, tenant isolation, UUID PKs)
+- [x] 7.2 Create `prisma/.env.example` (DATABASE_URL placeholder)
+- [x] *Story covered*: S-SL-03
 
 ### Step 8: Documentation Summary — 👤 Maycoll
-- [ ] 8.1 Create `aidlc-docs/construction/shared-libs/code/code-summary.md` (list of all generated files with descriptions)
+- [x] 8.1 Create `aidlc-docs/construction/shared-libs/code/code-summary.md` (list of all generated files with descriptions)
 
 ---
 
