@@ -1,0 +1,30 @@
+{
+  "name": "ai-client",
+  "projectType": "library",
+  "sourceRoot": "libs/ai-client/src",
+  "prefix": "meedok",
+  "tags": ["scope:shared", "type:util"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/ai-client",
+        "main": "libs/ai-client/src/index.ts",
+        "tsConfig": "libs/ai-client/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ai-client"],
+      "options": {
+        "jestConfig": "libs/ai-client/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": { "lintFilePatterns": ["libs/ai-client/**/*.ts"] }
+    }
+  }
+}
