@@ -238,3 +238,46 @@
 **Context**: Step 14 gate active.
 
 ---
+
+## Code Generation — shared-libs — User Approval
+**Timestamp**: 2026-06-24T02:02:00Z
+**User Input**: "Continue to Next Stage"
+**AI Response**: shared-libs Code Generation approved. Moving to Unit 2: tenant — Functional Design.
+**Context**: Unit 1 (shared-libs) — COMPLETE. Starting Unit 2 (tenant) per-unit loop.
+
+---
+
+## Functional Design — tenant — Complete
+**Timestamp**: 2026-06-24T02:10:00Z
+**User Input**: "done" (answers filed in tenant-functional-design-plan.md)
+**AI Response**: All 4 questions answered. Key decisions: Prisma singleton at apps/api/src/db/prisma-client.ts with $extends timeout (Q1+Q2=A), in-memory 60s TTL cache for tenant lookups (Q3=B), findById returns only non-deleted tenants (Q4=A). Generated business-logic-model.md, business-rules.md, domain-entities.md. Presenting for approval.
+**Context**: Functional Design — tenant — COMPLETE. Next: NFR Requirements — tenant.
+
+---
+
+## Functional Design — tenant — Approval Prompt
+**Timestamp**: 2026-06-24T02:11:00Z
+**AI Response**: Presenting Functional Design completion message. Awaiting explicit user approval.
+
+---
+
+## Functional Design — tenant — User Approval
+**Timestamp**: 2026-06-24T02:12:00Z
+**User Input**: "Continue to Next Stage"
+**AI Response**: Functional Design approved. Proceeding to NFR Requirements — tenant.
+**Context**: Functional Design tenant — COMPLETE. Next: NFR Requirements — tenant.
+
+---
+
+## NFR Requirements — tenant — Complete
+**Timestamp**: 2026-06-24T02:13:00Z
+**AI Response**: NFR Requirements generated directly from shared-libs decisions (no additional questions needed). Generated nfr-requirements.md (7 NFRs: P01-P03 performance, S01-S03 security, R01-R02 resiliency, T01 PBT) and tech-stack-decisions.md (all inherited, 3 new files, no new deps). All 3 extension compliance sections addressed. Presenting for approval.
+**Context**: NFR Requirements — tenant — COMPLETE. Next: NFR Design — tenant.
+
+---
+
+## NFR Requirements — tenant — Approval Prompt
+**Timestamp**: 2026-06-24T02:14:00Z
+**AI Response**: Presenting NFR Requirements completion message. Awaiting explicit user approval.
+
+---
